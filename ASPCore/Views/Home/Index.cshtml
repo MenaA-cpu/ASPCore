@@ -1,0 +1,41 @@
+﻿@model Peliculas
+@{
+    ViewData["Portal de peliculas"] = "Pagina de inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+
+    <table>
+        <tr>
+            <td>Numero de pelicula: @Model.ID_1</td>
+            <td>Fecha publicacion: @Model.Fecha_subida1</td>
+            <td>Nombre pelicula:@Model.Nombre_pelicula1</td>
+            <td>Dirigida por:@Model.Director1</td>
+            <td>Comentarios:@Model.Comentarios1</td>
+            <td>Clasificacion:@Model.Clasificacion1</td>
+            <td>Duracion:@Model.Duracion1</td>
+        </tr>
+
+        <tr>
+            <td>Numero de pelicula: @Model.ID_2</td>
+            <td>Fecha publicacion: @Model.Fecha_subida2</td>
+            <td>Nombre pelicula:@Model.Nombre_pelicula2</td>
+            <td>Dirigida por:@Model.Director2</td>
+            <td>Comentarios:@Model.Comentarios2</td>
+            <td>Clasificacion:@Model.Clasificacion2</td>
+            <td>Duracion:@Model.Duracion2</td>
+        </tr>
+
+        <tr>
+            <td>Numero de pelicula: @Model.ID_3</td>
+            <td>Fecha publicacion: @Model.Fecha_subida3</td>
+            <td>Nombre pelicula:@Model.Nombre_pelicula3</td>
+            <td>Dirigida por:@Model.Director3</td>
+            <td>Comentarios:@Model.Comentarios3</td>
+            <td>Clasificacion:@Model.Clasificacion3</td>
+            <td>Duracion:@Model.Duracion3</td>
+        </tr>
+    </table>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
